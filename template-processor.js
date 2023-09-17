@@ -11,7 +11,7 @@ TemplateProcessor.prototype.fillIn = function (dictionary) {
     }
 
 
-    
+    const regex = /{{(.*?)}}/g;
     const filledTemplate = this.template.replace(regex, (match, property) => {
         // Check if the property exists in the dictionary
 
