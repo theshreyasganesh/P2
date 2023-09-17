@@ -1,14 +1,14 @@
 'use strict';
-
-/*
- * This file tests the Project #2 JavaScript assignment problems. It prints what
- * it finds to the console log and updates the text being displayed in the window with a
- * summary of the results.
- */
+  /*
+   * This file tests the Project #2 JavaScript assignment problems. It prints what
+   * it finds to the console log and updates the text being displayed in the window with a
+   * summary of the results.
+   */
 
 /* eslint-env browser, node */
 
 // Result message for Problems 1-3
+(function () { 
 var p1Message = 'SUCCESS';
 var p2Message = 'SUCCESS';
 var p3Message = 'SUCCESS';
@@ -29,7 +29,7 @@ function arraysAreTheSame(a1, a2) {
   return true;
 }
 
-// ********************* Test MakeMultiFilter
+// ******* Test MakeMultiFilter
 
 if (typeof MakeMultiFilter !== 'function') {
   console.error('MakeMultiFilter is not a function', typeof MakeMultiFilter);
@@ -105,7 +105,7 @@ if (typeof MakeMultiFilter !== 'function') {
 }
 console.log('Test MakeMultiFilter:', p1Message);
 
-// ********************* Test TemplateProcessor
+// ******* Test TemplateProcessor
 
 if (typeof TemplateProcessor !== 'function') {
   console.error('TemplateProcessor is not a function', typeof TemplateProcessor);
@@ -128,7 +128,7 @@ if (typeof TemplateProcessor !== 'function') {
 }
 console.log('Test TemplateProcessor:', p2Message);
 
-// ********************* Test to see if the symbols we defined are in the global address space
+// ******* Test to see if the symbols we defined are in the global address space
 
 varDeclared.forEach(function (sym) {
   if (window[sym] !== undefined) {
@@ -153,3 +153,4 @@ window.onload = function () {
   document.getElementById('p2').innerHTML = p2Message;
   document.getElementById('p3').innerHTML = p3Message;
 };
+})();
