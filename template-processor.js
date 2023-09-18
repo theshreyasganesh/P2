@@ -6,7 +6,7 @@ function TemplateProcessor(template) {
 
 TemplateProcessor.prototype.fillIn = function (dictionary) {
     // Use a regular expression to find all instances of {{property}} in the template
-    
+    for (const property in dictionary){
         
     }
 
