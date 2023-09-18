@@ -21,7 +21,7 @@ Modifies test-project2.js to use an IIFE (Immediately Invoked Function Expressio
 Testing
 The projects can be linting and testing using:
 
-npm install  <br>
-npm run lint  <br>
-npm test  <br>
+1. npm install  
+2. npm run lint  
+3. npm test 
 This will install ESLint, run linting on the JavaScript files, and execute the test suite in test-project2.js.
